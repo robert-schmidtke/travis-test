@@ -4,7 +4,7 @@ osx_image: xcode10.1
 language: cpp
 
 install:
-  - touch artifact.txt
+  - echo "Hello World!" >> artifact.txt
 
 script: skip
 
