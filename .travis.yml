@@ -10,11 +10,10 @@ script: skip
 
 before_deploy:
   - export TRAVIS_TAG=${TRAVIS_BRANCH}
+  - echo ${ENCRYPTED_GITHUB_OAUTH_TOKEN}
 
 deploy:
   provider: releases
-  api_key:
-    secure: idDlHMNdScvi63SU+OG/IcFSbsbLIDWJkFghyaaqk8xGzGxynDLk1VUZjeaU7DWOP3Q6SQFVTXBW87uIivYTosEUqopGPQ88qZcSH0jLzbnwgXQ81jk2hvByfP+BrgsUxgdQF6QTo6cXrmjN5fUv+WQl85uqQ6D0Qcq5/fzFPgpwYhvGKlITPhu/5a4SwdlxNEnF+y6E496PmA2JnMnelnhtcA4MytfJSdfhTbWuN/6GQ4IAydGHIHbm/H7B3lGY4rmqPDds3K4UTdjIYbqYtj8YGkyh5DZbvLoboc5QfujaGBIUIPgx7IGJ7UmxfqP7xwwvTj3dEB+rfX4iep5cUZASeHlpKVwHB5g60CvI9U9qxUj/WtW1DAc0WINYhtMHURX0d7kkGPzD1DzXYKtKyFuJn/afRChG43m4gevGijVHb37K+kC1kvmO4B6n22e6IOPBWWdP0PUSfwGD9LLXFbSW3CoEm74OVwkreJsmAeTldz238S0uDzezf8SSCd5Uk53MDJ5Nv5CfZNrpKHClG3uhCIGwYGUi2UaslJD/Zhp4bWT4ZmAOdGr8+cb/r9H+tHyH+0UGaMxa4IT1Tpy0WODt8igh1bub3IBC7IRcIJFtV1yn3gIYAEcDmS3nHk5+uUpFohYmBHH+XK3NF9tHTTR2tVUOmwC8+g0s9w5XZZM=
-  file: artifact.txt
+  api_key: ${ENCRYPTED_GITHUB_OAUTH_TOKEN}
   on:
     repo: robert-schmidtke/travis-test
