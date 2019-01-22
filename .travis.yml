@@ -1,0 +1,20 @@
+os: osx
+osx_image: xcode10.1
+
+language: cpp
+
+install:
+  - touch artifact.txt
+
+script: skip
+
+before_deploy:
+  - export TRAVIS_TAG=${TRAVIS_BRANCH}
+
+deploy:
+  provider: releases
+  api_key:
+    secure: ${ENCRYPTED_GITHUB_OAUTH_TOKEN}
+  file: artifact.txt
+  on:
+    repo: robert-schmidtke/travis-test
