@@ -14,7 +14,7 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-    secure: ${ENCRYPTED_GITHUB_OAUTH_TOKEN}
+    secure: "${ENCRYPTED_GITHUB_OAUTH_TOKEN}"
   file: artifact.txt
   on:
     repo: robert-schmidtke/travis-test
