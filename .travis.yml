@@ -3,6 +3,8 @@ osx_image: xcode10.1
 
 language: cpp
 
+if: tag IS blank
+
 install:
   - echo "Hello World!" >> artifact.txt
 
