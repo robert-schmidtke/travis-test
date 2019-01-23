@@ -10,6 +10,7 @@ install:
 
 script:
   - export TRAVIS_TAG="${TRAVIS_BRANCH}-tag"
+  - echo "commit ${TRAVIS_COMMIT}"
 
 deploy:
   provider: releases
