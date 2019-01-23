@@ -16,8 +16,8 @@ deploy:
   api_key: ${GITHUB_OAUTH_TOKEN}
   file:
     - artifact.txt
-  name: "https://github.com"
-  body: "https://github.com"
+  name: "the name"
+  body: "https://github.com [https://github.com](GitHub)"
   overwrite: true
   skip_cleanup: true
   on:
