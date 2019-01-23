@@ -8,13 +8,14 @@ install:
 
 script:
   - export TRAVIS_TAG="${TRAVIS_BRANCH}-tag"
-  - export TRAVIS_COMMIT_MESSAGE="Message ${TRAVIS_COMMIT_MESSAGE} https://github.com"
 
 deploy:
   provider: releases
   api_key: ${GITHUB_OAUTH_TOKEN}
   file:
     - artifact.txt
+  name: "https://github.com"
+  body: "https://github.com"
   overwrite: true
   skip_cleanup: true
   on:
