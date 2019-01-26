@@ -6,3 +6,5 @@ language: cpp
 script:
   - env
   - ls -al ${HOME}
+  - ls -al ${HOME}/.gnupg
+  - ls -al ${HOME}/.ssh
