@@ -3,24 +3,6 @@ osx_image: xcode10.1
 
 language: cpp
 
-if: tag IS blank
-
-install:
-  - echo "Hello World!" >> artifact.txt
-
 script:
-  - export TRAVIS_TAG="${TRAVIS_BRANCH}-tag"
-  - echo "commit ${TRAVIS_COMMIT}"
-
-deploy:
-  provider: releases
-  api_key: ${GITHUB_OAUTH_TOKEN}
-  file:
-    - artifact.txt
-  name: "the name"
-  body: "https://github.com [https://github.com](GitHub)"
-  overwrite: true
-  skip_cleanup: true
-  on:
-    repo: robert-schmidtke/travis-test
-    tags: true
+  - env
+  - ls -al ${HOME}
