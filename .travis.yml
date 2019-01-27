@@ -9,3 +9,4 @@ script:
   - ls -al ${HOME}/.gnupg
   - ls -al ${HOME}/.gnupg/private-keys-v1.d
   - ls -al ${HOME}/.ssh
+  - gpg --list-keys
