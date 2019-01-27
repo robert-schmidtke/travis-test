@@ -12,4 +12,10 @@ script:
   - gpg --list-keys
   - ls -al ${TRAVIS_BUILD_DIR}
   - lsof
+  - ps aux
+  - cat ${HOME}/build.sh
+  - cat ${HOME}/runner.rb
+  - cat ${HOME}/runner.rb.err
+  - cat ${HOME}/runner.rb.out
+  - cat ${HOME}/wrapper.sh
   - sleep 30s
