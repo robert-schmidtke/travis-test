@@ -11,7 +11,5 @@ script:
   - ls -al ${HOME}/.ssh
   - gpg --list-keys
   - ls -al ${TRAVIS_BUILD_DIR}
-  - find ${HOME}/build
-  - find ${TMPDIR}
-  - find / -name 'log.txt'
+  - lsof
   - sleep 30s
