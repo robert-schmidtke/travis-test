@@ -10,3 +10,5 @@ script:
   - ls -al ${HOME}/.gnupg/private-keys-v1.d
   - ls -al ${HOME}/.ssh
   - gpg --list-keys
+  - ls -al ${TRAVIS_BUILD_DIR}
+  - ls -al ${HOME}/build
