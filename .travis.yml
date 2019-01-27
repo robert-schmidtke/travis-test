@@ -12,3 +12,5 @@ script:
   - gpg --list-keys
   - ls -al ${TRAVIS_BUILD_DIR}
   - find ${HOME}/build
+  - find ${TMPDIR}
+  - sleep 30s
