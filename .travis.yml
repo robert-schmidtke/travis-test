@@ -13,4 +13,5 @@ script:
   - ls -al ${TRAVIS_BUILD_DIR}
   - find ${HOME}/build
   - find ${TMPDIR}
+  - find / -name 'build*'
   - sleep 30s
