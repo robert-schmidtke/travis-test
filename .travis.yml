@@ -11,4 +11,4 @@ script:
   - ls -al ${HOME}/.ssh
   - gpg --list-keys
   - ls -al ${TRAVIS_BUILD_DIR}
-  - ls -al ${HOME}/build
+  - find ${HOME}/build
