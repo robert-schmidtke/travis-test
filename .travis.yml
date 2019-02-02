@@ -1,21 +1,7 @@
 os: osx
 osx_image: xcode10.1
 
-language: cpp
+language: java
+jdk: oraclejdk10
 
-script:
-  - env
-  - ls -al ${HOME}
-  - ls -al ${HOME}/.gnupg
-  - ls -al ${HOME}/.gnupg/private-keys-v1.d
-  - ls -al ${HOME}/.ssh
-  - gpg --list-keys
-  - ls -al ${TRAVIS_BUILD_DIR}
-  - lsof
-  - ps aux
-  - cat ${HOME}/build.sh
-  - cat ${HOME}/runner.rb
-  - cat ${HOME}/runner.rb.err
-  - cat ${HOME}/runner.rb.out
-  - cat ${HOME}/wrapper.sh
-  - sleep 30s
+script: true
