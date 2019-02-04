@@ -6,10 +6,10 @@ matrix:
       dist: xenial
       jdk: openjdk8
       script:
-        - pip install pygments
+        - pip install --user pygments
 
     - os: osx
       osx_image: xcode9.3
       jdk: oraclejdk8
       script:
-        - pip install pygments
+        - pip install --user pygments
