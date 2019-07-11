@@ -1,7 +1,7 @@
-language: java
-
-os: linux
-dist: xenial
-jdk: openjdk8
-script:
-  - uname
+os: osx
+osx_image: xcode10.2
+addons:
+  homebrew:
+    casks:
+      - osxfuse
+script: true
